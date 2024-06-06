@@ -6,7 +6,7 @@ import Home from '../app/page'
 
 import Link from 'next/link'
 
-interface Props { component:(React.FunctionComponent | null), path:(string | null), key:(string | null)}
+interface Props { component:(React.FunctionComponent | null) }
 
 // type route = { Component: JSX.Element }
 

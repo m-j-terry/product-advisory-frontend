@@ -10,9 +10,7 @@ import ValueProposition from "@/components/ValueProposition";
 import Services from "../services/page";
 import ServicesCarousel from '../../components/servicesCarousel';
 
-interface Props { key:string, path:string, page:string }
-
-export default function StartupFunding(props:Props) {
+export default function StartupFunding() {
     const contactButton = {
         Component: TechnicalConsultation,
         key: "Technical Consultation",

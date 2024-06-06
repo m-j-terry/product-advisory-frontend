@@ -12,9 +12,7 @@ import ServicesCarousel from "../../components/servicesCarousel"
 import TechnicalConsultation from "../technical-consultation/page"
 import Services from "../services/page"
 
-interface Props { key:string, path:string, page:string }
-
-export default function MinorityEntrepreneurs(props:Props) {
+export default function MinorityEntrepreneurs() {
     const contactButton = {
         Component: TechnicalConsultation,
         key: "Technical Consultation",

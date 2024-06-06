@@ -10,6 +10,7 @@ import Process from "../components/LandingPage/Process/Process"
 import ServicesComponent from "@/components/LandingPage/Services/ServicesComponent";
 import MeetTheTeam from "@/components/LandingPage/Team/MeetTheTeam";
 // import CatchyHeadline from "../components/CatchyHeadline"
+
 export default function Home() {
   const contactButton = {
     key: "Get in Touch",

@@ -12,9 +12,7 @@ import ServicesCarousel from '../../components/servicesCarousel'
 import TechnicalConsultation from "../technical-consultation/page"
 import PoliciesAI from "../ai-policies-safety-law/page"
 
-interface Props { key:string, path:string, page:string }
-
-export default function ProductMarketing(props:Props) {
+export default function ProductMarketing() {
     const contactButton = {
         Component: TechnicalConsultation,
         key: "Technical Consultation",

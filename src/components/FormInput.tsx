@@ -2,13 +2,23 @@
 
 import { useState } from "react"
 
-interface Props { name:string, label:string, errorMessage:string, onChange:React.ChangeEventHandler<HTMLInputElement>, handleInputChange:React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>, id:string, values:{clientFirstName:string, clientLastName:string, clientPhoneNumber:string, clientEmail:string, clientEmailRepeat:string, clientCompany:string, clientLinkedIn:string, inquirySubject:string, inquiryMessage:string} }
+interface Props { name:string, label:string, errorMessage:string, handleInputChange:React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>, id:string, value:string, values:{clientFirstName:string, clientLastName:string, clientPhoneNumber:string, clientEmail:string, clientEmailRepeat:string, clientCompany:string, clientLinkedIn:string, inquirySubject:string, inquiryMessage:string} }
 
+interface FormInputProps {
+    id: string;
+    name: string;
+    type: string;
+    placeholder: string;
+    errorMessage: string;
+    label: string;
+    value: string;
+    handleInputChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void; // Adjust for textarea as well
+}
 
 export default function FormInput(props:Props) {
     const [isBlur, setIsBlur] = useState(false)
 
-    const handleInputBlur = (e) => {
+    const handleInputBlur = (e:React.FocusEvent<HTMLTextAreaElement | HTMLInputElement>  ) => {
         setIsBlur(true)
     }
 
@@ -32,9 +42,10 @@ export default function FormInput(props:Props) {
                     wrap="hard"
                     className="input"
                     {...props}
+                    value={props.value}
                     onChange={props.handleInputChange}
                     onBlur={handleInputBlur}
-                    blurred={isBlur.toString()}
+                    // blurred={isBlur.toString()}
                     onFocus={() => props.name === 'confirm' && setIsBlur(true)}
                 ></textarea>
             </div>
@@ -46,9 +57,10 @@ export default function FormInput(props:Props) {
                     // id={props.id}
                     {...props}
                     className={`input ${checkEmail(props.name)}`}
+                    value={props.value}
                     onChange={props.handleInputChange}
                     onBlur={handleInputBlur}
-                    blurred={isBlur.toString()}
+                    // blurred={isBlur.toString()}
                     onFocus={() => props.name === 'confirm' && setIsBlur(true)}
                 />
             </div>

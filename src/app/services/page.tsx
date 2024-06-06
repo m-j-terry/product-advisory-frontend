@@ -9,9 +9,7 @@ import CatchyHeadline from "../../components/CatchyHeadline"
 import ServicesCarousel from '../../components/servicesCarousel'
 // import TechnicalConsultation from "../technical-consultation/page"
 
-interface Props { key:string, path:string, page:string }
-
-export default function Services(props:Props) {
+export default function Services() {
     return (
         <>
             <head>
@@ -97,8 +95,6 @@ export default function Services(props:Props) {
 
             <ServicesCarousel 
                 component={null}
-                path={null}
-                key={null}
             />
 
             <Footer />

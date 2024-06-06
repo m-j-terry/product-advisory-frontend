@@ -4,8 +4,17 @@ import FormInput from './FormInput'
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react'
 import { generateToken } from '../app/utilities/send-request'
-interface input { id:string, name:string, type:string, placeholder:string, errorMessage:string, label:string, cols:string, rows:string }
 import ReCAPTCHA from 'react-google-recaptcha'
+
+interface Input {
+    id: string;
+    name: string;
+    type: string;
+    placeholder: string;
+    errorMessage: string;
+    label: string;
+    value:string;
+}
 
 export default function ClientRequestForm(){
     const [values, setValues] = useState({
@@ -120,7 +129,7 @@ export default function ClientRequestForm(){
         }
     ]
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e:React.ChangeEvent<HTMLInputElement>) => {
         function capitalizeFirstLetter(string:string) {
             return string.charAt(0).toUpperCase() + string.slice(1)
         }
@@ -157,7 +166,7 @@ export default function ClientRequestForm(){
         }
     }
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         if (values.clientEmail !== values.clientEmailRepeat){
             alert('Emails do not match!')
@@ -194,7 +203,7 @@ export default function ClientRequestForm(){
                     {inputs.map(input => 
                         <div className="formInput">
                             <p>{input.label}</p>
-                            <FormInput key={input.id} {...input} value={values[input.name]} values={values} handleInputChange={handleInputChange} />
+                            <FormInput key={input.id} {...input} value={values[input.name as keyof typeof values]} values={values} handleInputChange={handleInputChange} />
                         </div>
                     )}
                     

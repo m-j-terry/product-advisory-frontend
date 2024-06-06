@@ -12,9 +12,7 @@ import ServicesCarousel from "@/components/servicesCarousel"
 import TechnicalConsultation from "../technical-consultation/page"
 import ProductMarketing from "../product-marketing/page"
 
-interface Props { key:string, path:string, page:string }
-
-export default function FundingIncubators(props: Props) {
+export default function FundingIncubators() {
     const contactButton = {
         Component: TechnicalConsultation,
         key: "Technical Consultation",

@@ -12,9 +12,7 @@ import ValueProposition from "../../components/ValueProposition"
 import TechnicalConsultation from "../technical-consultation/page"
 import Services from "../services/page"
 
-interface Props { key:string, path:string, page:string }
-
-export default function PoliciesAI(props:Props) {
+export default function PoliciesAI() {
     const contactButton = {
         Component: TechnicalConsultation,
         key: "Technical Consultation",
