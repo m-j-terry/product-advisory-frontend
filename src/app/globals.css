@@ -943,5 +943,12 @@ button:hover{
   .bottomBorder{
     padding-bottom:1vmin;
   }
+
+  .teamMemberCard{
+    min-width:45vmin;
+  }
+  .arrowContainer{
+    margin:5vmin 5vmin 5vmin 2.5vmin;
+  }
 }
 

@@ -4,14 +4,14 @@ const team = [
     {
         img: teamImages.rashu,
         name: "Rashu Mangal",
-        role: "Founder",
-        bio: "Simple bio about our work in the field."
+        role: "Founder, Senior Product Manager",
+        bio: "Rashu is a senior manager at Appen, a leading B2B company that helps clients like Google, Apple, Meta, Boeingin the Bay Area with experience in AI Program Management."
     },
     {
         img: teamImages.zach,
         name: "Zach Segal",
-        role: "Project Manager",
-        bio: "Simple bio about our work in the field."
+        role: "Product Manager",
+        bio: "Zach Segal is a data scientist turned technical product manager who brings startup experience and an analytical mindset to our team."
     }, 
     {
         img: teamImages.chelsea,
@@ -28,8 +28,8 @@ const team = [
     {
         img: teamImages.suman,
         name: "Suman Hazra",
-        role: "Research Intern",
-        bio: "Simple bio about our work in the field."
+        role: "Product Manager",
+        bio: "Suman is a product manager pursuing a MS in Product Management at CMU."
     }
 ]
 
