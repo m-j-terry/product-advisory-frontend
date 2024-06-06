@@ -1,7 +1,7 @@
 "use client"
 
 // import { ReactNode } from "react"
-interface Props { data:React.ComponentType, align:string, background:string, id:string, title:string, subtitle:string }
+interface Props { data:JSX.Element, align:string, background:string, id:string, title:string, subtitle:string }
 
 export default function ValueProposition(props: Props){
     return(

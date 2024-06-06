@@ -21,7 +21,7 @@ export default function ClientRequestForm(){
     })
 
 // Recaptcha Scale
-    const [scaleFactor, setScaleFactor] = useState(window.innerWidth / .05 * 100)
+    const [scaleFactor, setScaleFactor] = useState<number>(1000)
     const [recaptchaValue, setRecaptchaValue] = useState<boolean>(false)
     useEffect(() => {
         let windowWidth = window.innerWidth

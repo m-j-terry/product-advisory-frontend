@@ -636,6 +636,19 @@ form{
   border-width:2px;
 }
 
+#error{
+  background-color:white;
+  padding-top:50vh;
+}
+
+.return{
+  color:var(--main-accent-orange);
+  text-decoration:underline;
+  transition: color .3s ease;
+}
+.return:hover{
+  color:var(--main-accent-lightorange);
+}
 /* Header and Footer */
 .Footer, .Header{
   display: flex;
@@ -762,6 +775,13 @@ button:hover{
     /* width:80vw; */
   }
 
+  .formInput{
+    width:100vw;
+    align-items:center;
+  }
+  .input{
+    width:30vw;
+  }
   .InquiryForm button{
     height: 7vw;
     width:30vw;
