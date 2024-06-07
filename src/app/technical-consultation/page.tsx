@@ -14,8 +14,7 @@ export default function TechnicalConsultation() {
                 <title>Product Advisory: Technical Consultation</title>
             </Head>
             <Header />
-            <div className="buffer"></div>
-            <div className="buffer greyBackground">
+            <div className="buffer greyBackground" id="TechnicalConsultation">
                 <center>
                     <h1 className="pageHeader">We can answer your questions</h1>
                     <p>Connect with us if you have any questions, feedback, or partnership inquiries.</p>
