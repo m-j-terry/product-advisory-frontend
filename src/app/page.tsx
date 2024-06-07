@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Head from 'next/head'
 import ValueProposition from '@/components/ValueProposition'
 // import GreyComponent from "../components/GreyComponent"
 // import WhiteComponent from "../components/WhiteComponent"
@@ -25,10 +26,11 @@ export default function Home() {
   }
   return (
     <>
-      <head>
+      <Head>
         <title>Product Advisory</title>
-      </head>
+      </Head>
       <Header />
+      <div className="buffer"></div>
       <div className="buffer" id="ProductAdvisory">
         {/* <Link href="/startup-funding">Startup Funding</Link> */}
         

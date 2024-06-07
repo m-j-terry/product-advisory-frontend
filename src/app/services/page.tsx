@@ -1,6 +1,7 @@
 "use client"
 
 // import Link from "next/link"
+import Head from 'next/head'
 import GreyComponent from "../../components/GreyComponent"
 import WhiteComponent from "../../components/WhiteComponent"
 import Header from "@/components/Header";
@@ -12,9 +13,9 @@ import ServicesCarousel from '../../components/servicesCarousel'
 export default function Services() {
     return (
         <>
-            <head>
+            <Head>
                 <title>Product Advisory: Services</title>
-            </head>
+            </Head>
             <Header />
             <div className="buffer"></div>
 

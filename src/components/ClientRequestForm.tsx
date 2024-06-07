@@ -1,7 +1,6 @@
 "use client"
 
 import FormInput from './FormInput'
-import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react'
 import { generateToken } from '../app/utilities/send-request'
 import ReCAPTCHA from 'react-google-recaptcha'
@@ -37,11 +36,32 @@ export default function ClientRequestForm(){
         if (windowWidth < 1000){
             setScaleFactor(windowWidth * .1 / 100)
         } else {
-            setScaleFactor(windowWidth * .05 / 100)
+            setScaleFactor(windowWidth * .03 / 100)
         }
     }, [])
-
-    // const router = useRouter();
+    // useEffect(() => {
+    //     const updateScaleFactor = () => {
+    //         let windowWidth = window.innerWidth;
+    //         let newScaleFactor = 1;
+        
+    //         if (windowWidth < 300) {
+    //             newScaleFactor = 0.75;
+    //         } else if (windowWidth < 600) {
+    //             newScaleFactor = 0.85;
+    //         } else if (windowWidth < 1000) {
+    //             newScaleFactor = 0.95;
+    //         }
+    
+    //         setScaleFactor(newScaleFactor);
+    //     };
+    
+    //     updateScaleFactor(); // Update scale factor initially
+    //     window.addEventListener('resize', updateScaleFactor); // Update scale factor on resize
+    
+    //     return () => {
+    //       window.removeEventListener('resize', updateScaleFactor); // Cleanup event listener
+    //     };
+    // }, []);
 
     const inputs = [
         {
@@ -203,7 +223,7 @@ export default function ClientRequestForm(){
                     {inputs.map(input => 
                         <div className="formInput">
                             <p>{input.label}</p>
-                            <FormInput key={input.id} {...input} value={values[input.name as keyof typeof values]} values={values} handleInputChange={handleInputChange} />
+                            <FormInput key={input.id} {...input} value={values[input.name as keyof typeof values]} values={values} handleinputchange={handleInputChange} />
                         </div>
                     )}
                     

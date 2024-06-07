@@ -660,6 +660,28 @@ form{
   display:flex;
   flex-direction:row;
 }
+.cls-1,.cls-2 {
+  stroke-width:0px;
+  transition: fill .3s ease;
+}
+.cls-2{
+  fill:#f24c00;
+}
+.cls-1{
+  fill:black;
+}
+
+.headerTitle:hover .cls-1{
+  fill:var(--main-accent-redorange);
+}
+
+.headerTitle:hover .cls-2{
+  fill:#000000;
+}
+
+.cls-2:hover{
+  fill:#000000;
+}
 
 .headerTitle{
   color: black;
@@ -949,6 +971,9 @@ button:hover{
   }
   .arrowContainer{
     margin:5vmin 5vmin 5vmin 2.5vmin;
+  }
+  .g-recaptcha{
+    transform: translate(-10vmin, 5vmin);
   }
 }
 

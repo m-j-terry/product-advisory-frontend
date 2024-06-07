@@ -5,7 +5,7 @@ const team = [
         img: teamImages.rashu,
         name: "Rashu Mangal",
         role: "Founder, Senior Product Manager",
-        bio: "Rashu is a senior manager at Appen, a leading B2B company that helps clients like Google, Apple, Meta, Boeingin the Bay Area with experience in AI Program Management."
+        bio: "Rashu is a senior manager at Appen, a leading B2B company that helps clients like Google, Apple, Meta, Boeing in the Bay Area with experience in AI Program Management."
     },
     {
         img: teamImages.zach,

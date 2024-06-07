@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link";
+import Head from 'next/head'
 import WhiteComponent from "../../components/WhiteComponent";
 import Header from "../../components/Header";
 import Footer from '../../components/Footer';
@@ -23,9 +24,9 @@ export default function StartupFunding() {
     }
     return (
         <>
-            <head>
+            <Head>
                 <title>Product Advisory: Startup Funding</title>
-            </head>
+            </Head>
             <Header />
             <div className="buffer">
                 <CatchyHeadline 

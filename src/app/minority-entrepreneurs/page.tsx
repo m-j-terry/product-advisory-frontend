@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Head from 'next/head'
 import GreyComponent from "../../components/GreyComponent"
 import WhiteComponent from "../../components/WhiteComponent"
 import Header from "@/components/Header"
@@ -25,9 +26,9 @@ export default function MinorityEntrepreneurs() {
     }
     return (
         <>
-            <head>
+            <Head>
                 <title>Product Advisory: Supporting Minority Entrepreneurs</title>
-            </head>
+            </Head>
             <Header />
             <div className="buffer">
                 <CatchyHeadline 
