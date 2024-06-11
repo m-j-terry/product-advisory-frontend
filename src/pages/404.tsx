@@ -1,19 +1,16 @@
-"use client"
+// "use client"
 
-import Link from "next/link"
-import Header from "../components/Header"
-import Footer from '../components/Footer'
+// import Head from 'next/head';
+// import '../styles/globals.css';
 
+// function MyApp() {
+//     return (
+//         <Head>
+//             <title>Product Advisory</title>
+//             <meta name="description" content="My awesome Next.js app" />
+//             <link rel="icon" href="/favicon.ico" />
+//         </Head>
+//     );
+// }
 
-export default function ErrorElement() {
-    return (
-        <div>
-            <Header />
-            <center className="buffer" id="error">
-                <h2>Error 404 Not Found</h2>
-                <Link href="/" className="return">Return Home</Link>
-            </center>
-            <Footer />
-        </div>
-    );
-}
+// export default MyApp;
