@@ -232,7 +232,7 @@ export default function ClientRequestForm(){
                         <ReCAPTCHA 
                             style={{ transform: `scale(${scaleFactor})`, transformOrigin: '0 0' }}
                             className="g-recaptcha"
-                            sitekey={process.env.NEXT_PUBLIC_REACT_APP_SITE_KEY}
+                            sitekey="6Lemc_MpAAAAAOeMzlfstU54Tj0-81PyApzHlAth"
                             onChange={() => handleRecaptchaChange(true)}
                         />
                     </div>
