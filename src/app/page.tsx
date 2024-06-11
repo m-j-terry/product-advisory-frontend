@@ -30,7 +30,6 @@ export default function Home() {
         <title>Product Advisory</title>
       </Head>
       <Header />
-      <div className="buffer"></div>
       <div className="buffer" id="ProductAdvisory">
         {/* <Link href="/startup-funding">Startup Funding</Link> */}
         
@@ -41,20 +40,21 @@ export default function Home() {
             background="greyBackground"
             align="leftAlign"
             data={
-                <div>   
-                    {/* <Link key={contactButton.key} to={contactButton.path}> */}
-                        <button className="getInTouchButton" id="navButton">Get In Touch</button>
-                    {/* </Link> */}
-                    {/* <Link key={servicesButton.key} to={servicesButton.path}> */}
-                        <button className="button" id="learnMore">Learn More</button>
-                    {/* </Link>  */}
-                    
-                </div>
+              <div>   
+                <Link key={contactButton.key} href={contactButton.path}>
+                    <button className="getInTouchButton" id="navButton">Get In Touch</button>
+                </Link>
+                <Link key={servicesButton.key} href={servicesButton.path}>
+                    <button className="button" id="learnMore">Learn More</button>
+                </Link> 
+              </div>
             }
         />
+
         <ServicesComponent />
         <Process />
         <MeetTheTeam />
+
         <ValueProposition
             title="We're Here For You"
             background="whiteBackground"
@@ -62,14 +62,14 @@ export default function Home() {
             id="FinalValueProposition"
             subtitle="Send us an inquiry or continue reading about the different ways we can help your business grow"
             data={
-                <div>
-                    <Link key={contactButton.key} href={contactButton.path}>
-                        <button className="getInTouchButton">Get In Touch</button>
-                    </Link>
-                    <Link key={servicesButton.key} href={servicesButton.path}>
-                        <button className="button" id="learnMore">Learn More</button>
-                    </Link> 
-                </div>
+              <div>
+                <Link key={contactButton.key} href={contactButton.path}>
+                  <button className="getInTouchButton">Get In Touch</button>
+                </Link>
+                <Link key={servicesButton.key} href={servicesButton.path}>
+                  <button className="button" id="learnMore">Learn More</button>
+                </Link> 
+              </div>
             }
         />
           

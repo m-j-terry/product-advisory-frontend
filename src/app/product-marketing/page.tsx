@@ -22,7 +22,7 @@ export default function ProductMarketing() {
     const AIButton = {
         Component: PoliciesAI,
         key: "Policies AI",
-        path: '/policies-ai'
+        path: '/ai-policies-safety-law'
     }
     return (
         <>
