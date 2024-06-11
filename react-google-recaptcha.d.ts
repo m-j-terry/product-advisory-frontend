@@ -9,4 +9,4 @@ interface ReCAPTCHAProps {
     stoken?: string;
     hl?: string;
     badge?: 'bottomright' | 'bottomleft' | 'inline';
-  }
+}
