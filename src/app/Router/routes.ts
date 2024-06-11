@@ -21,11 +21,6 @@ const siteRoutes:RoutesArray = [
         key: 'Product Advisory',
         path: '/'
     }, 
-    // {
-    //     Component: ErrorElement,
-    //     key: '404 Page Not Found',
-    //     path: '/*'
-    // },
     {
         Component: StartupFunding,
         key: 'Startup Funding',
