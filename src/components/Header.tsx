@@ -46,17 +46,17 @@ export default function Header() {
             setDropdownOne([])
             setDropdownThree([])
             setDropdownFour([])
-            setDropdownTwo(siteRoutes.slice(3, 5))
+            setDropdownTwo(siteRoutes.slice(3, 4))
         } else if (num === 3) {
             setDropdownOne([])
             setDropdownTwo([])
             setDropdownFour([])
-            setDropdownThree(siteRoutes.slice(5, 6))
+            setDropdownThree(siteRoutes.slice(4, 6))
         } else if (num === 4) {
             setDropdownOne([])
             setDropdownTwo([])
             setDropdownThree([])
-            setDropdownFour(siteRoutes.slice(6, 7))
+            setDropdownFour(siteRoutes.slice(6, 9))
         }
     }
 
@@ -121,7 +121,7 @@ export default function Header() {
             </div>
             <nav className="routes">
                 <div className="dropdown" id="dropdown1">
-                    <button className="dropdownButton" onClick={() => setRouteState(1)}>Startup Funding</button>
+                    <button className="dropdownButton" onClick={() => setRouteState(1)}>Incubator</button>
                     {dropdownOne.map(({ key, path }) => (
                         <Link onClick={() => resetNav()} className="route" key={key} href={path}>
                             {key}
@@ -130,7 +130,7 @@ export default function Header() {
                 </div>
 
                 <div className="dropdown" id="dropdown2">
-                <button className="dropdownButton" onClick={() => setRouteState(2)}>Go to Market</button>
+                <button className="dropdownButton" onClick={() => setRouteState(2)}>Products</button>
                     {dropdownTwo.map(({ key, path }) => (
                         <Link onClick={() => resetNav()} className="route" key={key} href={path}>
                             {key}

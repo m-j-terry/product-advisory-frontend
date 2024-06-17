@@ -5,7 +5,9 @@ import PoliciesAI from "../ai-policies-safety-law/page";
 import ProductMarketing from "../product-marketing/page";
 import TechnicalConsultation from "../technical-consultation/page";
 import MinorityEntrepreneurs from "../minority-entrepreneurs/page";
-import Services from "../services/page"
+import Services from "../services/page";
+import Products from "../products/page";
+import PartnershipProgram from "../partnership-program/page";
 // import ErrorElement from '../error-element/page'
 interface Route {
     Component: React.FunctionComponent;
@@ -32,6 +34,26 @@ const siteRoutes:RoutesArray = [
         path: '/funding-incubators'    
     },
     {
+        Component: Products,
+        key: 'Products',
+        path: '/products'
+    },
+    {
+        Component: MinorityEntrepreneurs,
+        key: 'Supporting Minority Entrepreneurs',
+        path: '/minority-entrepreneurs'
+    },
+    {
+        Component: PartnershipProgram,
+        key: 'Partnership Program',
+        path: '/partnership-program'
+    },
+    {
+        Component: Services,
+        key: 'Services',
+        path: '/services'
+    },
+    {
         Component: PoliciesAI,
         key: 'AI Policies, Safety & Law',
         path: '/ai-policies-safety-law'
@@ -40,16 +62,6 @@ const siteRoutes:RoutesArray = [
         Component: ProductMarketing,
         key: 'Product Marketing & Sales',
         path: '/product-marketing'
-    },
-    {
-        Component: MinorityEntrepreneurs,
-        key: 'Supporting Minority Entrepreneurs',
-        path: '/minority-entrepreneurs'
-    },
-    {
-        Component: Services,
-        key: 'Services',
-        path: '/services'
     },
     {
         Component: TechnicalConsultation,

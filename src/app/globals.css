@@ -157,6 +157,7 @@ body {
   border-color:transparent; 
   background-color:transparent;
   font-family:"Poppins";
+  margin-bottom: 0 !important;
 }
 .dropdownButton:hover{
   color:var(--main-accent-orange)
