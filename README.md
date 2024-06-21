@@ -1,4 +1,4 @@
-!(Product Advisory)[/public/PA_logo.svg]
+!(Product Advisory)[/public/PA-Logo.png]
 
 
 ## Product Advisory Team: 
