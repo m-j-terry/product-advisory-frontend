@@ -1,4 +1,4 @@
-!(Product Advisory)[/public/PA-Logo.jpg]
+![Product Advisory](/public/PA-Logo.jpg)
 
 
 ## Product Advisory Team: 
